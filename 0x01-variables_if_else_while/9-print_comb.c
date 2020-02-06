@@ -1,20 +1,22 @@
-#include <stdio.h>
-/**
- *main - Entry point
- *
- *Description: This program will take a random number and display whether it is
- *positive, negative, or zero.
- *Return: Returns 0 upon successful run.
- */
+k#include <stdio.h>
+ /**
+  *main - Entry point
+  *Description: Function 
+  *Return: 0 upon successful 
+  */
 int main(void)
 {
-int c;
-for (c = '0' ; c <= '9' ; c++) 
+int num = '0';
+while (num <= '9')
 {
-if (c != 9)
-putchar (c);
-putchar (',');
-putchar (' ');
+putchar(num);
+if (num != '9')
+{
+putchar(',');
+putchar(' ');
 }
+num++;
+}
+putchar('\n');
 return (0);
 }
