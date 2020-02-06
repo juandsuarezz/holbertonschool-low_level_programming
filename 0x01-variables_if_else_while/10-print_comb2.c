@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- *main - Entry point
- *Description: Something
- *Return: 0 upon successful
- */
+*main - Entry point
+*Description: Something
+*Return: 0 upon successful
+*/
 int main(void)
 {
 int c = 0;
@@ -20,4 +20,4 @@ c++;
 }
 putchar('\n');
 return (0);
-} 
+}
