@@ -8,16 +8,16 @@
  */
 int main(void)
 {
-int num = '0';
-while (num <= '9')
+int c = '0';
+while (c <= '9')
 {
-putchar(num);
-if (num != '9')
+putchar(c);
+if (c != '9')
 {
 putchar(',');
 putchar(' ');
 }
-num++;
+c++;
 }
 putchar('\n');
 return (0);
