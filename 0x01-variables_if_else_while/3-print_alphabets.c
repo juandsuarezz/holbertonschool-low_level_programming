@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Return: Always 0 (Success)
+ *Description: This program will take a random number and display whether it is
+ *positive, negative, or zero.
+ *Return: Returns 0 upon successful run.
  */
 int main(void)
 {
