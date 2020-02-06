@@ -1,23 +1,23 @@
 #include <stdio.h>
-/**
- *main - Entry point
- *
- *Description: This program will take a random number and display whether it is
- *positive, negative, or zero.
- *Return: Returns 0 upon successful run.
- */
+ /**
+  *main - Entry point
+  *
+  *Description: A program
+  *Return: 0 upon successful 
+  */
 int main(void)
 {
-char c;
-for (c = 'a' ; c <= 'z' ; c++)
+char c = 'a';
+while (c <= 'z')
 {
-if (c == 'e' | c == 'q')
-c + 1;
+if (c == 'e' || c == 'q')
+c++;
 else
 {
-putchar (c);
+putchar(c);
+c++;
 }
 }
-putchar ('\n');
+putchar('\n');
 return (0);
 }
