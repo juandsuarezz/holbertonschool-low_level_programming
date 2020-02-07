@@ -1,9 +1,11 @@
 #include <stdio.h>
 /**
-*main - Entry point
-*Description: Something
-*Return: 0 upon successful
-*/
+ *main - Entry point
+ *
+ *Description: This program will print all letters in lowercase except for
+ *q and e.
+ *Return: 0 upon successful completion
+ */
 int main(void)
 {
 int c = 0;
@@ -20,3 +22,4 @@ c++;
 }
 putchar('\n');
 return (0);
+}
