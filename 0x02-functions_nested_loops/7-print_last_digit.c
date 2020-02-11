@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *main - Entry point
- *
+ * print_last_digit - Entry point
+ * @num: description
  *Description: This program will print all letters in lowercase except for
  *q and e.
  *Return: 0 upon successful completion

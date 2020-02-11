@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * main - Entry point
- *
+ * _isalpha - Entry point
+ * @c: description
  * Return: Always 0 (Success)
  */
 int _isalpha(int c)
