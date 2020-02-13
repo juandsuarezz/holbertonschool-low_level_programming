@@ -32,5 +32,5 @@ printf(" ");
 n++;
 }
 printf("\n");
-return(0);
+return (0);
 }

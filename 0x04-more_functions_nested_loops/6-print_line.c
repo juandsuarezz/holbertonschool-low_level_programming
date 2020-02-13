@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *print_line - Draws a line 
- *@n: number of times 
+ *print_line - Draws a line
+ *@n: number of times
  *
  *Return: void
  */
