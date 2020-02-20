@@ -7,9 +7,11 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-if (*s1 > *s2)
-return ((int)(*s1 - *s2));
-if (*s1 <*s2)
-return ((int)(*s1 - *s2));
-return (0);
+int count;
+for (count = 0; s1[count] != '\0' && s2[count] != '\0'; count++)
+{
+if (s1[count] != s2[count])
+return (s1[count] - s2[count]);
+}
+return (s1[count] - s2[count]);
 }
