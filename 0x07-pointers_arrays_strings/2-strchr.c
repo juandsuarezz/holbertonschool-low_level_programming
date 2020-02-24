@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strchr - entry point
  * Return: array
@@ -13,5 +14,10 @@ if (*s == c)
 return (s);
 s++;
 }
-return (0);
+if (c=='\0')
+{
+return (s);
+}
+else
+return (NULL);
 }
