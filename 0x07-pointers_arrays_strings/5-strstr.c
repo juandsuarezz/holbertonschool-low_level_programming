@@ -1,21 +1,29 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * _strstr - entry point
- * Return: array
- * @haystack: array
- * @needle: value
- *
+ * _strstr - prints buffer in hexa
+ * @haystack: the address of memory to print
+ * @needle: the size of the memory to print
+ * Return: Nothing.
  */
 char *_strstr(char *haystack, char *needle)
 {
-int a, b;
-for (b = 0 ; needle[b] ; b++)
+unsigned int b;
+while (haystack[0] != '\0')
 {
-for (a = 0 ; haystack[a] ; a++)
+for (b = 0; needle[b] != '\0'; b++)
 {
-if (haystack[a] == needle[b])
-return (haystack + a);
+if (haystack[0 + b] == needle[b])
+continue;
+else
+break;
 }
+if (needle[b] == '\0')
+return (haystack);
+haystack++;
 }
-return (0);
+if (haystack[0] == '\0')
+return (NULL);
+else
+return (haystack);
 }
