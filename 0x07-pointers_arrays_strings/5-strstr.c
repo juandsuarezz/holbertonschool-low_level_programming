@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strstr - entry point
  * Return: array
@@ -18,8 +17,5 @@ if (haystack[a] == needle[b])
 return (haystack + a);
 }
 }
-if (needle == '\0')
-return (haystack);
-else
-return (NULL);
+return (0);
 }
