@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_diagsums - entry point
- * 
+ *
  * @a: array
  * @size: array
  *
@@ -13,7 +13,7 @@ int j;
 int s1 = 0;
 int s2 = 0;
 int c = 0;
-for(i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 for (j = 0; j < size; j++)
 {
@@ -24,7 +24,7 @@ s1 = s1 + a[c];
 c++;
 }
 }
-printf ("%d,", s1);
-printf (" %d", s2);
+printf("%d,", s1);
+printf(" %d", s2);
 putchar ('\n');
 }
