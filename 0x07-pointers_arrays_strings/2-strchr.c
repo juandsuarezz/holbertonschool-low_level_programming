@@ -13,6 +13,5 @@ if (*s == c)
 return (s);
 s++;
 }
-else
 return (0);
 }
