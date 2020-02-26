@@ -9,9 +9,9 @@ int check(int count, int n)
 {
 if (n == count)
 return (1);
-if (n <= 1)
+else if (n <= 1)
 return (0);
-if (n % count == 0)
+else if (n % count == 0)
 return (0);
 return (check(count + 1, n));
 }
