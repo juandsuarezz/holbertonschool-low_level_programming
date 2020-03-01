@@ -1,29 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
- * main - Entry point
- * @argc: argument count
- * @argv: Argument vector contains the arguments passed to the program
- * Return: Always 0 (Success) and exit
+ *main - Entry point
+ *@argc:int
+ *@argv:char
+ *Return: int
  */
+
 int main(int argc, char *argv[])
 {
-int count;
-int sum = 0;
-if (argc == 1)
+int i, sum;
+for (i = 1; i < argc; i++)
 {
-}
-else
-for (count = 1; count < argc; count++)
-{
-if (!isdigit(*argv[count]))
+if (!atoi(argv[i]))
 {
 printf("Error\n");
 return (1);
 }
-else
-sum += atoi(argv[count]);
+sum = sum + atoi(argv[i]);
 }
 printf("%i\n", sum);
 return (0);
