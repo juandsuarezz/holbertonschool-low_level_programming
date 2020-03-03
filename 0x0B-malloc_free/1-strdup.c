@@ -20,7 +20,7 @@ i++;
 }
 i = 0;
 string = malloc(sizeof(char) * (lenght + 1));
-if (str == NULL)
+if (string == NULL)
 return (NULL);
 while (i < (lenght + 1))
 {
