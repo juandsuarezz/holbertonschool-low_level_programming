@@ -38,4 +38,5 @@ return (conc);
 }
 else
 return (NULL);
+conc = malloc(sizeof(s1) + sizeof(s2));
 }
