@@ -1,7 +1,12 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * create_array - create_array
+ * @size: variable
+ * @c: Variable
+ * Return: Always 0 (Success)
+ */
 char *create_array(unsigned int size, char c)
 {
 unsigned int count = 0;
@@ -20,5 +25,5 @@ while (count < size)
 array[count] = c;
 count++;
 }
-return(array);
+return (array);
 }
