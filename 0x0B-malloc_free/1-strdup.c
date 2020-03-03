@@ -28,5 +28,7 @@ string[i] = str[i];
 i++;
 }
 string[i] = '\0';
+if (str == NULL)
+return (NULL);
 return (string);
 }
