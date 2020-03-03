@@ -2,44 +2,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * str_concat - str_concat
- * @s2: variable
- * @s1: Variable
- * Return: Always 0 (Success)
+ * str_concat - Concatenates a string.
+ * @s1: String 1
+ * @s2: String 2
+ * Return: Null or the array concatenate.
  */
 char *str_concat(char *s1, char *s2)
 {
-int i;
-int j;
-char *conc;
-if (s1 == NULL)
-{
-s1 = malloc(sizeof(char));
-*s1 = '\0';
-}
-if (s2 == NULL)
-{
-s2 = malloc(sizeof(char));
-*s2 = '\0';
-}
-if (conc != NULL)
-{
-for (i = 0; s1[i] != '\0'; i++)
-{
-conc[i] = s1[i];
-}
-for (j = 0; s2[j] != '\0'; i++, j++)
-{
-conc[i] = s2[j];
-}
-return (conc);
-conc = malloc(sizeof(s1) + sizeof(s2));
-if (conc == NULL)
-return (NULL);
-}
-else
-return (NULL);
-conc = malloc(sizeof(s1) + sizeof(s2));
-if (conc == NULL)
-return (NULL);
+  int con1;
+  int con2;
+  char *conar;
+
+  if (s2 == NULL)
+    {
+      s2 = malloc(sizeof(char));
+      *s2 = '\0';
+    }
+  if (s1 == NULL)
+    {
+      s1 = malloc(sizeof(char));
+      *s1 = '\0';
+    }
+  conar = malloc(sizeof(s1) + sizeof(s2));
+  if (conar != NULL)
+    {
+      for (con1 = 0; s1[con1] != '\0'; con1++)
+	{
+	  conar[con1] = s1[con1];
+	}
+      for (con2 = 0; s2[con2] != '\0'; con1++, con2++)
+	{
+	  conar[con1] = s2[con2];
+	}
+      return (conar);
+    }
+  else
+    return (NULL);
 }
