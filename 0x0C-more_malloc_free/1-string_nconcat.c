@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n > con2)
 		n = con2;
-	conar = malloc(sizeof(char) * (con1) + (con2 + 1));
+	conar = malloc(sizeof(char) * (con1 + n + 1));
 	if (conar == NULL)
 	{
 		return (NULL);
