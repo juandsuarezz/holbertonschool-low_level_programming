@@ -65,16 +65,16 @@ void print_all(const char * const format, ...)
 	{
 		l = 0;
 		while (ops[l].pr != NULL)
-	{
-		if (format[i] == ops[l].pr[0])
 		{
-			printf("%s", coma);
-			ops[l].f(p_all);
-			coma = ", ";
+			if (format[i] == ops[l].pr[0])
+			{
+				printf("%s", coma);
+				ops[l].f(p_all);
+				coma = ", ";
+			}
+			l++;
 		}
-		l++;
-	}
-	i++;
+		i++;
 	}
 	printf("\n");
 	va_end(p_all);
