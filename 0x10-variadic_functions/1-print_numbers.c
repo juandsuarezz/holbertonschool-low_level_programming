@@ -2,7 +2,11 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * print_numbers - Entry point
+ * @n: variable
+ * @separator: variable
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list numlist;
