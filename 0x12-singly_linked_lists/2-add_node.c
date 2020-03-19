@@ -2,25 +2,25 @@
 #include <string.h>
 
 /**
- * add_node - adds new node
- * @head: pointer of linked list
- * @str: string to add
- * Return: linked list plus new node
+ * add_node - adds new node at the begining
+ * @head: start point of linked list
+ * @str: string to be added
+ * Return: linked list + new node
  */
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *node;
-int length = 0;
-node = malloc(sizeof(list_t));
-if (!node)
+list_t *newnode;
+unsigned int count = 0;
+newnode = malloc(sizeof(list_t));
+if (!newnode)
 return (NULL);
-while (str[length] != 0)
+while(str[count]); 
 {
-length++;
+count;
 }
-node->str = strdup(str);
-node->len = length;
-node->next = *head;
-*head = node;
+newnode->str = strdup(str);
+newnode->len = count;
+newnode->next = *head;
+*head = newnode;
 return (*head);
 }
